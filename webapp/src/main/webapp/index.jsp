@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>Welcome!! Saidemy DevOps Student Registration!</h1>
+    <h1>Welcome!! Srinu channel  Registration!</h1>
     <p>Please fill in this form!</p>
     <hr>
     <br>
@@ -31,10 +31,6 @@
 
     <label for="father"><b>Father Name</b></label>
     <input type="text" placeholder="Father Name" name="father" id="father" required>
-    <br>
-
-    <label for="brother"><b>Brother Name</b></label>
-    <input type="text" placeholder="Brother Name" name="brother" id="brother" required>
     <br>
 
     <label for="sister"><b>Sister Name</b></label>
