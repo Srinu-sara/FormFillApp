@@ -8,28 +8,31 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
+      background-color: rgba(0, 0, 0, 0.6);
       background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDZBXCXVl5c7eBbO2Cjh4C6BTWBrSqlrJ8pQ&s');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      background-blend-mode: overlay;
     }
 
     .container {
       max-width: 600px;
       margin: 50px auto;
       padding: 30px;
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: #e6f2ff; /* Light blue */
       border-radius: 15px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
     }
 
     h1 {
       text-align: center;
-      color: #2c3e50;
+      color: #003366;
     }
 
     label {
       font-weight: bold;
+      color: #00264d;
     }
 
     input[type="text"],
@@ -39,14 +42,15 @@
       width: 100%;
       padding: 10px;
       margin: 8px 0 20px 0;
-      border: 1px solid #ccc;
+      border: 1px solid #3399ff;
       border-radius: 5px;
+      background-color: #f0f8ff; /* Light input bg */
     }
 
     .registerbtn {
       width: 100%;
       padding: 12px;
-      background-color: #4CAF50;
+      background-color: #0059b3;
       color: white;
       border: none;
       border-radius: 5px;
@@ -55,16 +59,17 @@
     }
 
     .registerbtn:hover {
-      background-color: #45a049;
+      background-color: #004080;
     }
 
     .signin {
       text-align: center;
       margin-top: 20px;
+      color: #00264d;
     }
 
     a {
-      color: #4CAF50;
+      color: #004080;
     }
   </style>
 </head>
@@ -73,6 +78,7 @@
   <form action="submit_form.php" method="post">
     <div class="container">
       <h1>VAGDEVI Intermediate College Registration</h1>
+      <p style="text-align: center; font-weight: bold; color: #004080;">Location: East Street, Markapur</p>
       <p>Please fill in this form to register.</p>
       <hr>
 
@@ -93,7 +99,10 @@
 
       <label for="aadhar">Aadhar Number</label>
       <input type="text" id="aadhar" name="aadhar" placeholder="Enter Aadhar number" required>
-
+      
+      <label for="contact">Contact Number</label>
+      <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required>
+      
       <label for="stream">Stream</label>
       <select id="stream" name="stream" required>
         <option value="">--Select Stream--</option>
